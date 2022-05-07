@@ -29,5 +29,7 @@ namespace API.Phonebook.Models
         [BsonElement("IsEnable")]
         [BsonRepresentation(BsonType.Boolean)]
         public bool IsEnable { get; set; }
+        [BsonElement("Phonebook")]
+        public Phonebook Phonebooks { get; set; }
     }
 }

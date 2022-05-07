@@ -21,5 +21,7 @@ namespace API.Phonebook.Models
         [BsonElement("CreatedDateTime")]
         [BsonRepresentation(BsonType.DateTime)]
         public DateTime CreatedDateTime { get; set; }
+        [BsonElement("Address")]
+        public Address Addresses { get; set; }
     }
 }
