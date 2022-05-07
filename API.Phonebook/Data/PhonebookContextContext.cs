@@ -8,12 +8,12 @@ using MongoDB.Driver;
 
 namespace API.Phonebook.Data
 {
-    public class CatalogContext : ICatalogContext
+    public class PhonebookContext : IPhonebookContext
     {
         private readonly IConfiguration _configuration;
         private readonly IMongoClient _mongoClient;
 
-        public CatalogContext(IConfiguration configuration, IMongoClient mongoClient)
+        public PhonebookContext(IConfiguration configuration, IMongoClient mongoClient)
         {
             _configuration = configuration;
             _mongoClient = mongoClient;

@@ -7,7 +7,7 @@ using MongoDB.Driver;
 
 namespace API.Phonebook.Data
 {
-    public interface ICatalogContext
+    public interface IPhonebookContext
     {
         IMongoCollection<User> Users { get; }
         IMongoCollection<Models.Phonebook> Phonebooks { get; }
